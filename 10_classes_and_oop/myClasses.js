@@ -8,7 +8,7 @@ class User {
     }
 
     encryptPassword(){
-        return `${this.password}abc`
+        return `${this.password}abcd`
     }
     changeUsername(){
         return `${this.username.toUpperCase()}`
@@ -16,7 +16,7 @@ class User {
 
 }
 
-const chai = new User("coffee", "coffee@gmail.com", "123")
+const chai = new User("coffee", "coffee@gmail.com", "12345")
 
 console.log(chai.encryptPassword());
 console.log(chai.changeUsername());
@@ -30,14 +30,14 @@ function User(username, email, password){
 }
 
 User.prototype.encryptPassword = function(){
-    return `${this.password}abc`
+    return `${this.password}abcd`
 }
 User.prototype.changeUsername = function(){
     return `${this.username.toUpperCase()}`
 }
 
 
-const tea = new User("tea", "tea@gmail.com", "123")
+const tea = new User("tea", "tea@gmail.com", "12345")
 
 console.log(tea.encryptPassword());
 console.log(tea.changeUsername());
